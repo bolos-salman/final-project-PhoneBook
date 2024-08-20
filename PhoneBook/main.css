@@ -1,0 +1,211 @@
+/* Universal selector to reset margins, padding, and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+}
+
+/* Styling for the body element */
+body {
+    font-family: 'Helvetica Neue', sans-serif; /* Font style for the entire page */
+    background-color: #1e1e1e; /* Dark background color */
+    color: #f0f0f0; /* Light text color */
+    display: flex; /* Flexbox layout */
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center; /* Center elements vertically */
+    align-items: center; /* Center elements horizontally */
+    min-height: 100vh; /* Ensure the body takes at least the full height of the viewport */
+    padding: 10px; /* Padding around the body */
+}
+
+/* Styling for the main title */
+h1.title-large {
+    font-size: 2em; /* Large font size */
+    color: #4CAF50; /* Green color for the title */
+    margin-bottom: 20px; /* Space below the title */
+    text-align: center; /* Center the title text */
+}
+
+/* Styling for the main container holding content */
+.main-container {
+    width: 100%; /* Full width within its parent */
+    max-width: 700px; /* Maximum width of the container */
+    background-color: #282828; /* Dark background for the container */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+    padding: 20px; /* Padding inside the container */
+    margin: 20px; /* Margin outside the container */
+}
+
+/* Styling for the header section */
+header {
+    text-align: center; /* Center the header content */
+    margin-bottom: 20px; /* Space below the header */
+}
+
+/* Styling for secondary headings (h2) */
+h2 {
+    font-size: 1.5em; /* Size of the h2 text */
+    color: #ffcc00; /* Yellow color for the h2 */
+    margin-bottom: 20px; /* Space below the h2 */
+}
+
+/* Styling for the form section */
+.form-section {
+    margin-bottom: 20px; /* Space below the form section */
+    display: flex; /* Flexbox layout */
+    justify-content: flex-start; /* Align items to the start of the container */
+    align-items: center; /* Align items vertically centered */
+    gap: 10px; /* Ensure even spacing between buttons and inputs */
+}
+
+/* Styling for forms */
+form {
+    display: flex; /* Flexbox layout for form elements */
+    gap: 10px; /* Space between form elements */
+}
+
+/* Styling for input fields */
+input {
+    flex: 1; /* Input fields take up remaining space */
+    padding: 10px; /* Padding inside the input fields */
+    font-size: 16px; /* Font size for input text */
+    border: 2px solid #444; /* Dark border for input fields */
+    border-radius: 8px; /* Rounded corners for input fields */
+    background-color: #333; /* Dark background for input fields */
+    color: #fff; /* Light text color inside input fields */
+}
+
+/* Media query for tablets and small desktops */
+@media (max-width: 768px) {
+    .main-container {
+        width: 90%; /* Slightly reduce width on smaller screens */
+        padding: 17px; /* Reduce padding */
+    }
+
+    h1.title-large {
+        font-size: 1.8em; /* Reduce title size */
+    }
+
+    h2 {
+        font-size: 1.4em; /* Reduce secondary heading size */
+    }
+
+    .profile-pic {
+        width: 50px; /* Reduce profile picture size */
+        height: 50px; /* Reduce profile picture size */
+    }
+
+    .info {
+        flex-direction: row; /* Arrange info in a row */
+        align-items: center; /* Center items vertically */
+    }
+
+    .name, .phone, .email {
+        font-size: 1em; /* Adjust font size for smaller screens */
+    }
+
+    .button-group {
+        flex-direction: row; /* Arrange buttons in a row */
+        justify-content: space-between; /* Space buttons evenly */
+    }
+
+    .mainContact {
+        flex-direction: column; /* Stack contact details vertically */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    .button-group {
+        width: 100%; /* Buttons take full width */
+    }
+
+    .profile-pic {
+        margin-right: 0; /* Remove right margin */
+        margin-bottom: 10px; /* Add bottom margin */
+    }
+
+    .name {
+        font-size: 1.2em; /* Adjust name font size */
+    }
+}
+
+/* Media query for mobile devices */
+@media (max-width: 480px) {
+    .main-container {
+        width: 100%; /* Full width on mobile */
+        padding: 10px; /* Reduce padding further */
+    }
+
+    h1.title-large {
+        font-size: 1.4em; /* Further reduce title size */
+    }
+
+    h2 {
+        font-size: 1.2em; /* Further reduce secondary heading size */
+    }
+
+    .form-section {
+        flex-direction: column; /* Stack form section items vertically */
+    }
+
+    .entry {
+        flex-direction: column; /* Stack entries vertically */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    .profile-pic {
+        width: 40px; /* Reduce profile picture size */
+        height: 40px; /* Reduce profile picture size */
+    }
+
+    .name, .phone, .email {
+        font-size: 0.9em; /* Reduce font size */
+    }
+
+    .button-group {
+        flex-direction: row; /* Arrange buttons in a row */
+        justify-content: space-between; /* Space buttons evenly */
+        width: 100%; /* Buttons take full width */
+    }
+
+    .mainContact {
+        flex-direction: column; /* Stack contact details vertically */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    .profile-pic {
+        margin-right: 0; /* Remove right margin */
+        margin-bottom: 10px; /* Add bottom margin */
+    }
+
+    button, input {
+        font-size: 14px; /* Reduce font size for buttons and inputs */
+        padding: 8px; /* Reduce padding for buttons and inputs */
+    }
+}
+/* Ensure the body takes up the full height of the viewport */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Ensure the main content takes up all the available space */
+.main-container {
+    flex: 1;
+}
+
+/* Styling for the sticky footer */
+.footer {
+    text-align: center; /* Center the footer text */
+    font-size: 14px; /* Smaller font size */
+    color: #ccc; /* Light grey color */
+    padding: 10px; /* Padding inside the footer */
+    background-color: #282828; /* Dark background for the footer */
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+    width: 100%; /* Make the footer span the full width */
+    position: sticky; /* Stick the footer to the bottom */
+    bottom: 0; /* Position at the bottom */
+}
+

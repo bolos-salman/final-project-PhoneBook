@@ -1,0 +1,81 @@
+/* Styling for the popup container */
+.popup {
+    position: fixed; /* Position the popup in relation to the viewport */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust to ensure exact center */
+    background-color: #282828; /* Dark background color for the popup */
+    padding: 20px; /* Padding inside the popup */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+    color: #f0f0f0; /* Light text color */
+    z-index: 1000; /* Ensure the popup is on top of other elements */
+    max-width: 400px; /* Maximum width of the popup */
+    width: 90%; /* Responsive width, shrinks to 90% of viewport width if smaller */
+}
+
+/* Styling for the content inside the popup */
+.popup-content {
+    text-align: center; /* Center-align the content inside the popup */
+}
+
+/* Styling for the profile picture inside the popup */
+.popup img.profile-pic {
+    width: 80px; /* Width of the profile picture */
+    height: 80px; /* Height of the profile picture */
+    margin-bottom: 10px; /* Space below the image */
+    border-radius: 50%; /* Make the image circular */
+}
+
+/* Styling for the form inside the popup */
+.popup form {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack form elements vertically */
+    gap: 15px; /* Space between form elements */
+    width: 100%; /* Form takes full width of the popup */
+}
+
+/* Styling for the input fields inside the popup */
+.popup input {
+    padding: 10px; /* Padding inside the input fields */
+    font-size: 16px; /* Font size for the input text */
+    border: 2px solid #444; /* Dark border around the inputs */
+    border-radius: 8px; /* Rounded corners for the inputs */
+    background-color: #333; /* Dark background color for the input fields */
+    color: #fff; /* Light text color inside the input fields */
+}
+
+/* Styling for buttons inside the popup */
+.popup button {
+    padding: 10px; /* Padding inside the buttons */
+    font-size: 16px; /* Font size for the button text */
+    color: #fff; /* Light text color for the buttons */
+    background-color: #ff5722; /* Bright background color for the buttons */
+    border: none; /* No border for the buttons */
+    border-radius: 8px; /* Rounded corners for the buttons */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition effect for background color change */
+}
+
+/* Hover effect for buttons inside the popup */
+.popup button:hover {
+    background-color: #e64a19; /* Darker shade on hover */
+}
+
+/* Styling for the close button inside the popup */
+.close-popup {
+    margin-top: 20px; /* Space above the close button */
+    padding: 8px 15px; /* Padding inside the close button */
+    font-size: 16px; /* Font size for the close button text */
+    color: #fff; /* Light text color for the close button */
+    background-color: #ff5722; /* Same bright background color as other buttons */
+    border: none; /* No border for the close button */
+    border-radius: 8px; /* Rounded corners for the close button */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition effect for background color change */
+}
+
+/* Hover effect for the close button inside the popup */
+.close-popup:hover {
+    background-color: #e64a19; /* Darker shade on hover */
+}

@@ -1,0 +1,174 @@
+/* General button styling */
+button {
+    padding: 5px 10px; /* Reduced size for compact buttons */
+    font-size: 14px; /* Smaller font size for the buttons */
+    color: #fff; /* White text color */
+    background-color: #ff5722; /* Bright orange background color */
+    border: none; /* No border */
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition for background color on hover */
+}
+
+/* Hover effect for buttons */
+button:hover {
+    background-color: #e64a19; /* Darker shade on hover */
+}
+
+/* Styling for the search input field */
+#search {
+    width: 100%; /* Full width of its container */
+    padding: 10px; /* Padding inside the input */
+    font-size: 16px; /* Font size for the search input */
+    border: 2px solid #444; /* Dark border */
+    border-radius: 8px; /* Rounded corners */
+    background-color: #333; /* Dark background */
+    color: #fff; /* White text color */
+    margin-bottom: 20px; /* Space below the search input */
+}
+
+/* Styling for the contacts section */
+.contacts-section {
+    max-height: 400px; /* Limit the height */
+    overflow-y: auto; /* Enable vertical scrolling if content overflows */
+}
+
+/* Styling for each contact entry */
+.mainContact {
+    display: flex; /* Flexbox layout */
+    align-items: center; /* Center items vertically */
+    background-color: #3b3b3b; /* Dark background for each contact */
+    border: 1px solid #555; /* Darker border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 10px; /* Padding inside each contact */
+    margin-bottom: 10px; /* Space below each contact */
+    transition: transform 0.5s; /* Smooth scaling effect on hover */
+    justify-content: space-between; /* Space between contact details and buttons */
+}
+
+/* Hover effect for each contact */
+.mainContact:hover {
+    transform: scale(1.03); /* Slightly enlarge on hover */
+}
+
+/* Styling for the profile picture */
+.profile-pic {
+    width: 60px; /* Set width for the image */
+    height: 60px; /* Set height for the image */
+    border-radius: 50%; /* Make the image circular */
+    margin-right: 15px; /* Space between image and contact info */
+}
+
+/* Styling for the contact info section */
+.info {
+    display: flex; /* Flexbox layout */
+    flex-direction: column; /* Stack name, phone, and email vertically */
+    flex-grow: 1; /* Allow info section to take up available space */
+}
+
+/* Styling for the contact name */
+.name {
+    font-size: 1.2em; /* Larger font size for the name */
+    font-weight: bold; /* Bold text for the name */
+}
+
+/* Styling for phone and email within the contact info */
+.phone,
+.email {
+    font-size: 1em; /* Standard font size */
+    margin-top: 5px; /* Space above the text */
+    color: #ccc; /* Light gray color */
+}
+
+/* Styling for the button group within each contact */
+.button-group {
+    display: flex; /* Flexbox layout for buttons */
+    flex-direction: column; /* Stack buttons vertically */
+}
+
+/* General styling for edit, delete, and info buttons */
+.edit-button, .delete-button, .info-button {
+    border: none; /* No border */
+    padding: 5px 10px; /* Padding inside the buttons */
+    cursor: pointer; /* Pointer cursor on hover */
+    margin: 2px 0; /* Small vertical space between buttons */
+}
+
+/* Styling for the edit button */
+.edit-button {
+    background-color: #4caf50; /* Green background color */
+    color: white; /* White text color */
+}
+
+/* Hover effect for the edit button */
+.edit-button:hover {
+    background-color: #388e3c; /* Darker green on hover */
+}
+
+/* Styling for the delete button */
+.delete-button {
+    background-color: #f44336; /* Red background color */
+    color: white; /* White text color */
+}
+
+/* Hover effect for the delete button */
+.delete-button:hover {
+    background-color: #d32f2f; /* Darker red on hover */
+}
+
+/* Styling for the info button */
+.info-button {
+    background-color: #2196F3; /* Blue background color */
+    color: white; /* White text color */
+}
+
+/* Hover effect for the info button */
+.info-button:hover {
+    background-color: #1976D2; /* Darker blue on hover */
+}
+
+/* Styling for the "Delete All" button */
+#deleteAllButton {
+    padding: 5px 10px; /* Reduced size for the button */
+    font-size: 14px; /* Smaller font size */
+    color: #fff; /* White text color */
+    background-color: #f44336; /* Red background color */
+    border: none; /* No border */
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition for background color on hover */
+}
+
+/* Hover effect for the "Delete All" button */
+#deleteAllButton:hover {
+    background-color: #d32f2f; /* Darker red on hover */
+}
+
+/* Styling for the submit button in the contact form */
+#contactForm button {
+    padding: 5px 10px; /* Reduced size */
+    font-size: 14px; /* Smaller font size */
+    color: #fff; /* White text color */
+    background-color: #ff5722; /* Bright orange background color */
+    border: none; /* No border */
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition for background color on hover */
+}
+
+/* Hover effect for the submit button in the contact form */
+#contactForm button:hover {
+    background-color: #e64a19; /* Darker orange on hover */
+}
+
+/* Styling for the footer */
+.footer {
+    text-align: center; /* Center the footer text */
+    margin-top: 20px; /* Space above the footer */
+    font-size: 14px; /* Smaller font size */
+    color: #ccc; /* Light grey color */
+    padding: 10px; /* Padding inside the footer */
+    background-color: #282828; /* Dark background for the footer */
+    border-radius: 12px; /* Rounded corners for the footer */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+}
